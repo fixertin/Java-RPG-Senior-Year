@@ -22,7 +22,7 @@ public class TestMenu1_1 extends Menu {
 			if(getActiveOption() == a) {
 				g.setColor(Color.RED);
 			}
-			a.drawThatCrap(g);
+			a.render(g);
 		}
 	}
 

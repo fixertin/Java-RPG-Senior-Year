@@ -15,7 +15,7 @@ public class GameText extends Actor{
     }
 
     @Override
-    public void drawThatCrap(Graphics g) {
+    public void render(Graphics g) {
 
     }
 }

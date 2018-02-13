@@ -22,7 +22,7 @@ public class Test extends Actor{
 	}
 
 	@Override
-	public void drawThatCrap(Graphics g) {
+	public void render(Graphics g) {
 		Rectangle r = new Rectangle((int)x, (int)y, 32, 32);
 		g.setColor(Color.BLUE);
 		g.drawRect(r.x, r.y, r.width, r.height);

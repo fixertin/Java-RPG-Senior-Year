@@ -24,7 +24,7 @@ public class Container extends Actor{
 	}
 
 	@Override
-	public void drawThatCrap(Graphics g) {
+	public void render(Graphics g) {
 		g.setColor(Color.RED);
 		g.drawRect((int)x, (int)y, width, height);
 	}

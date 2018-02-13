@@ -29,7 +29,7 @@ public class ActionOption extends Actor implements Option{
 	}
 
 	@Override
-	public void drawThatCrap(Graphics g) {
+	public void render(Graphics g) {
 		g.setFont(new Font(ResourceManager.gameFontName, Font.PLAIN, 20));
 		g.drawString(displayText, (int)x, (int)y);
 	}

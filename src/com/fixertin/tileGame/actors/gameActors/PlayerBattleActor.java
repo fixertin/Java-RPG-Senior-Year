@@ -25,7 +25,7 @@ public class PlayerBattleActor extends BattleActor{
 	}
 
 	@Override
-	public void drawThatCrap(Graphics g) {
+	public void render(Graphics g) {
 		g.setColor(Color.BLUE);
 		g.fillRect((int)x, (int)y, 32, 32);
 	}

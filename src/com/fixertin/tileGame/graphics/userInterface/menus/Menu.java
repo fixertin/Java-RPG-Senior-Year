@@ -12,9 +12,9 @@ public class Menu implements Renderable, Tickable{
     public int activeIndex;
 
     @Override
-    public void drawThatCrap(Graphics g) {
+    public void render(Graphics g) {
         for(MenuItem item : menuItems){
-            item.getActor().drawThatCrap(g);
+            item.getActor().render(g);
         }
     }
 

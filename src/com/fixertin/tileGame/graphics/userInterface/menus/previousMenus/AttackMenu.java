@@ -23,7 +23,7 @@ public class AttackMenu extends Menu {
 			if(getActiveOption() == a) {
 				g.setColor(Color.RED);
 			}
-			a.drawThatCrap(g);
+			a.render(g);
 		}
 	}
 
