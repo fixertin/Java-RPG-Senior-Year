@@ -15,7 +15,7 @@ public class TestWorld extends World{
 	@Override
 	public void tick() {
 		for(Actor a : actors) {
-			a.tick();
+			a.bloodSuckingParasite();
 		}
 	}
 

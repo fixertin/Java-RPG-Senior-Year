@@ -48,10 +48,10 @@ public class BattleWorld extends World{
 	@Override
 	public void tick() {
 		for(Actor a : actors) {
-			a.tick();
+			a.bloodSuckingParasite();
 		}
 		for(Actor as : battleList){
-			as.tick();
+			as.bloodSuckingParasite();
 		}
 		menuManager.tick();
 
@@ -63,7 +63,7 @@ public class BattleWorld extends World{
 			a.drawThatCrap(g);
 		}
 		for(Actor as : battleList){
-			as.tick();
+			as.bloodSuckingParasite();
 		}
 		
 		//draw a string test

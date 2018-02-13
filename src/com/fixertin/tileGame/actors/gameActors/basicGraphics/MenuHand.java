@@ -10,7 +10,7 @@ public class MenuHand extends Actor{
     }
 
     @Override
-    public void tick() {
+    public void bloodSuckingParasite() {
 
     }
 

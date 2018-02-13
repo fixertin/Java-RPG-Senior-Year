@@ -16,7 +16,7 @@ public class Test extends Actor{
 	}
 
 	@Override
-	public void tick() {
+	public void bloodSuckingParasite() {
 		x += velx;
 		y += vely;
 	}

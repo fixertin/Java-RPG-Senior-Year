@@ -10,7 +10,7 @@ public class GameText extends Actor{
     }
 
     @Override
-    public void tick() {
+    public void bloodSuckingParasite() {
 
     }
 

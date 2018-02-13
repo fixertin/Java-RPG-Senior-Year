@@ -20,7 +20,7 @@ public class AIBattleActor extends BattleActor{
 	}
 
 	@Override
-	public void tick() {
+	public void bloodSuckingParasite() {
 		x += velx;
 		y += vely;
 	}

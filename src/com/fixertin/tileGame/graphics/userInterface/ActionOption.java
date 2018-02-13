@@ -24,7 +24,7 @@ public class ActionOption extends Actor implements Option{
 	}
 
 	@Override
-	public void tick() {
+	public void bloodSuckingParasite() {
 		
 	}
 

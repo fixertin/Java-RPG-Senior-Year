@@ -19,7 +19,7 @@ public class Menu implements Renderable, Tickable{
     }
 
     @Override
-    public void tick() {
+    public void bloodSuckingParasite() {
         if(KeyManager.a){
             System.out.print(activeIndex);
             activeIndex = activeIndex+1 % menuItems.size();

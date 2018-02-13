@@ -19,7 +19,7 @@ public class Container extends Actor{
 	}
 
 	@Override
-	public void tick() {
+	public void bloodSuckingParasite() {
 		
 	}
 

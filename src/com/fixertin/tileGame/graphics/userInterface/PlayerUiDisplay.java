@@ -15,7 +15,7 @@ public class PlayerUiDisplay extends Actor{
     }
 
     @Override
-    public void tick() {
+    public void bloodSuckingParasite() {
 
     }
 
