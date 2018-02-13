@@ -20,7 +20,7 @@ public class PlayerUiDisplay extends Actor{
     }
 
     @Override
-    public void render(Graphics g) {
+    public void drawThatCrap(Graphics g) {
         g.setFont(new Font(ResourceManager.gameFontName, Font.PLAIN, 20));
         g.setColor(Color.WHITE);
         g.drawString(actor.getName() + " " + actor.getHp() + " / " + actor.getMaxhp(), (int)x, (int)y);

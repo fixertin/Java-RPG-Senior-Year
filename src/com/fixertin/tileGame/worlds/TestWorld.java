@@ -22,7 +22,7 @@ public class TestWorld extends World{
 	@Override
 	public void render(Graphics g) {
 		for(Actor a : actors) {
-			a.render(g);
+			a.drawThatCrap(g);
 		}
 	}
 

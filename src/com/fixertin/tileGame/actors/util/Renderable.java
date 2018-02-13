@@ -3,5 +3,5 @@ package com.fixertin.tileGame.actors.util;
 import java.awt.*;
 
 public interface Renderable {
-    public void render(Graphics g);
+    public void drawThatCrap(Graphics g);
 }

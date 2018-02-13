@@ -15,7 +15,7 @@ public class MenuHand extends Actor{
     }
 
     @Override
-    public void render(Graphics g) {
+    public void drawThatCrap(Graphics g) {
 
     }
 }

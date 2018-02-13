@@ -26,7 +26,7 @@ public class AIBattleActor extends BattleActor{
 	}
 
 	@Override
-	public void render(Graphics g) {
+	public void drawThatCrap(Graphics g) {
 		g.setColor(Color.RED);
 		g.fillRect((int)x, (int)y, 32, 32);
 	}
