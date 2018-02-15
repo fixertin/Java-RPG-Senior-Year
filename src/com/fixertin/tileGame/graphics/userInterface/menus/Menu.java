@@ -4,7 +4,8 @@ import com.fixertin.tileGame.actors.util.KeyManager;
 import com.fixertin.tileGame.actors.util.Renderable;
 import com.fixertin.tileGame.actors.util.Tickable;
 
-import java.awt.*;
+import java.awt.Graphics;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
 public class Menu implements Renderable, Tickable{
@@ -32,6 +33,9 @@ public class Menu implements Renderable, Tickable{
             else
                 activeIndex++;
             System.out.println( " to " + activeIndex);
+        }
+        if(KeyManager.keyJustPressed(KeyEvent.VK_ENTER)){
+            menuItems.get(activeIndex).clicked();
         }
     }
 
