@@ -15,6 +15,6 @@ public class GoBackMenuCommand implements Command{
 
     @Override
     public void execute(){
-        menuStack.push(toMenu);
+        menuStack.pop();
     }
 }
