@@ -4,18 +4,19 @@ import com.fixertin.tileGame.actors.primitive.Actor;
 
 import java.awt.*;
 
-public class MenuHand extends Actor{
-    public MenuHand(double x, double y) {
+public class MenuBoxSelector extends Actor {
+
+    public MenuBoxSelector(double x, double y) {
         super(x, y);
     }
 
     @Override
-    public void tick() {
+    public void render(Graphics g) {
 
     }
 
     @Override
-    public void render(Graphics g) {
+    public void tick() {
 
     }
 }

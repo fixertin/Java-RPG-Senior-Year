@@ -22,27 +22,6 @@ public class BattleWorld extends World{
 
 	public BattleWorld(int width, int height) {
 		super(width, height);
-		addFighters();
-		sortBattleList();
-	}
-
-	private void doAiTurn(){
-		if(battleList.get(currentFighterIndex) instanceof AIBattleActor){
-
-		}else{
-			return;
-		}
-	}
-	
-	public void addFighters() {
-		addFighter(new PlayerBattleActor(100, 200, 100, "name", 20, 100));
-		addFighter(new AIBattleActor(100, 300, 50, "enemy", 10, 10));
-		addFighter(new AIBattleActor(100, 335, 50, "enemy", 10, 2));
-		addFighter(new AIBattleActor(100, 367, 50, "enemy", 10, 13));
-		addFighter(new AIBattleActor(100, 399, 50, "enemy", 10, 17));
-	}
-	public void fightCycleStep(){
-		currentFighterIndex = currentFighterIndex+1 % battleList.size();
 	}
 
 	@Override
@@ -63,7 +42,7 @@ public class BattleWorld extends World{
 			a.render(g);
 		}
 		for(Actor as : battleList){
-			as.tick();
+			as.render(g);
 		}
 		
 		//draw a string test
@@ -73,18 +52,12 @@ public class BattleWorld extends World{
 		menuManager.render(g);
 	}
 
-	public void attack(BattleActor attacker, BattleActor victim){
-		System.out.println(victim.getHp());
-		System.out.println("damage delt: " + attacker.getBaseDamage());
-		victim.setHp(victim.getHp() - attacker.getBaseDamage());
-		System.out.println(victim.getHp());
+	public void fightCycleStep(){
+		currentFighterIndex = currentFighterIndex+1 % battleList.size();
 	}
 
 	public void addFighter(BattleActor actor){
 		battleList.add(actor);
 	}
 
-	public void sortBattleList(){
-		Collections.sort(battleList);
-	}
 }
