@@ -12,6 +12,8 @@ public class Menu implements Renderable, Tickable{
     private ArrayList<MenuItem> menuItems = new ArrayList<MenuItem>();
     public int activeIndex;
 
+    
+
     @Override
     public void render(Graphics g) {
         for(MenuItem item : menuItems){
@@ -21,17 +23,20 @@ public class Menu implements Renderable, Tickable{
 
     @Override
     public void tick() {
-        if(KeyManager.a){
+        if(KeyManager.keyJustPressed(KeyEvent.VK_S)){
             System.out.print(activeIndex);
-            activeIndex = activeIndex+1 % menuItems.size();
+            if(activeIndex == menuItems.size()-1)
+                activeIndex = 0;
+            else
+                activeIndex++;
             System.out.println( " to " + activeIndex);
         }
-        if(KeyManager.d){
+        if(KeyManager.keyJustPressed(KeyEvent.VK_W)){
             System.out.print(activeIndex);
             if(activeIndex == 0)
                 activeIndex = menuItems.size()-1;
             else
-                activeIndex++;
+                activeIndex--;
             System.out.println( " to " + activeIndex);
         }
         if(KeyManager.keyJustPressed(KeyEvent.VK_ENTER)){
