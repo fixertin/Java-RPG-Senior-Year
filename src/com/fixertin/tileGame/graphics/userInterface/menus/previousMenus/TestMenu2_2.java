@@ -36,7 +36,7 @@ public class TestMenu2_2 extends Menu {
 		ActionOption activeOption = getActiveOption();
 		if(activeOption == optionList.get(0)) {
 			System.out.println("back");
-			MenuManager.menuQueue.pop();
+			//MenuManager.menuQueue.pop();
 		} else if(activeOption == optionList.get(1)) {
 
 		} else if(activeOption == optionList.get(2)) {

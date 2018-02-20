@@ -3,13 +3,13 @@ package com.fixertin.tileGame.worlds;
 import java.awt.Graphics;
 
 import com.fixertin.tileGame.actors.primitive.Actor;
-import com.fixertin.tileGame.graphics.userInterface.menus.Menu;
+import com.fixertin.tileGame.graphics.userInterface.MenuManager;
 
 public class TestWorld extends World{
 
 	public TestWorld(int width, int height) {
 		super(width, height);
-		createMenu();
+
 	}
 
 	@Override
@@ -26,8 +26,6 @@ public class TestWorld extends World{
 		}
 	}
 
-	private void createMenu(){
-		Menu menu = new Menu();
-	}
+
 
 }

@@ -6,11 +6,9 @@ import java.util.Stack;
 
 public class GoBackMenuCommand implements Command{
     private Stack<Menu> menuStack;
-    private Menu toMenu;
 
-    public GoBackMenuCommand(Stack<Menu> menuStack, Menu toMenu){
+    public GoBackMenuCommand(Stack<Menu> menuStack){
         this.menuStack = menuStack;
-        this.toMenu = toMenu;
     }
 
     @Override

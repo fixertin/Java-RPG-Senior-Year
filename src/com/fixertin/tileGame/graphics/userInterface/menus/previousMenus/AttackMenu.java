@@ -36,7 +36,7 @@ public class AttackMenu extends Menu {
 
 		} else if(activeOption == optionList.get(2)) {
 			System.out.println("back");
-			MenuManager.menuQueue.pop();
+			//MenuManager.menuQueue.pop();
 		}
 	}
 

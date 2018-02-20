@@ -5,6 +5,7 @@ import java.util.Stack;
 
 import com.fixertin.tileGame.actors.gameActors.basicGraphics.GameText;
 import com.fixertin.tileGame.graphics.userInterface.command.Command;
+import com.fixertin.tileGame.graphics.userInterface.command.GoBackMenuCommand;
 import com.fixertin.tileGame.graphics.userInterface.command.GoToNewMenuCommand;
 import com.fixertin.tileGame.graphics.userInterface.menus.Menu;
 import com.fixertin.tileGame.graphics.userInterface.menus.MenuItem;
@@ -28,9 +29,18 @@ public class MenuManager {
 
 		Command goToTwoCommand = new GoToNewMenuCommand(menuQueue, secondMenu);
 		Command goToThreeCommand = new GoToNewMenuCommand(menuQueue, thirdMenu);
-		MenuItem goToTwo = new MenuItem(new GameText(30, 40, "Go To Second Menu"),goToTwoCommand);
-		firstMenu.addMenuItem(goToTwo);
+		Command goBackCommand = new GoBackMenuCommand(menuQueue);
 
+		MenuItem goToTwo = new MenuItem(new GameText(30, 60, "Go To Second Menu"),goToTwoCommand);
+		MenuItem goToThree = new MenuItem(new GameText(30, 75, "Go to third menu"),goToThreeCommand);
+		MenuItem goBack = new MenuItem(new GameText(30, 60, "Back"),goBackCommand);
+
+		firstMenu.addMenuItem(goToTwo);
+		firstMenu.addMenuItem(goToThree);
+		secondMenu.addMenuItem(goBack);
+		thirdMenu.addMenuItem(goBack);
+
+		menuQueue.push(firstMenu);
 	}
 	
 	public void tick() {

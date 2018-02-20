@@ -30,9 +30,9 @@ public class TestMenu1_1 extends Menu {
 	public void doActiveOptionAction() {
 		ActionOption activeOption = getActiveOption();
 		if(activeOption == optionList.get(0)) {
-			MenuManager.menuQueue.push(MenuManager.possibleMenus.get(1));
+			//MenuManager.menuQueue.push(MenuManager.possibleMenus.get(1));
 		} else if(activeOption == optionList.get(1)) {
-			MenuManager.menuQueue.push(MenuManager.possibleMenus.get(2));
+			//MenuManager.menuQueue.push(MenuManager.possibleMenus.get(2));
 		}
 	}
 
