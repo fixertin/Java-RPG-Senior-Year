@@ -4,7 +4,6 @@ import java.awt.Graphics;
 import java.util.Stack;
 
 import com.fixertin.tileGame.actors.gameActors.basicGraphics.GameText;
-import com.fixertin.tileGame.actors.gameActors.basicGraphics.MenuBoxSelector;
 import com.fixertin.tileGame.graphics.userInterface.command.Command;
 import com.fixertin.tileGame.graphics.userInterface.command.GoBackMenuCommand;
 import com.fixertin.tileGame.graphics.userInterface.command.GoToNewMenuCommand;
