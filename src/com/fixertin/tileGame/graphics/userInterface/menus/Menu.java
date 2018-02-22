@@ -12,7 +12,7 @@ public class Menu implements Renderable, Tickable{
     private ArrayList<MenuItem> menuItems = new ArrayList<MenuItem>();
     public int activeIndex;
 
-    
+
 
     @Override
     public void render(Graphics g) {
