@@ -23,6 +23,7 @@ public class Menu implements Renderable, Tickable{
 
     @Override
     public void tick() {
+        menuItems.get(activeIndex).setSelected(false);
         if(KeyManager.keyJustPressed(KeyEvent.VK_S)){
             System.out.print(activeIndex);
             if(activeIndex == menuItems.size()-1)
@@ -33,12 +34,14 @@ public class Menu implements Renderable, Tickable{
         }
         if(KeyManager.keyJustPressed(KeyEvent.VK_W)){
             System.out.print(activeIndex);
+
             if(activeIndex == 0)
                 activeIndex = menuItems.size()-1;
             else
                 activeIndex--;
             System.out.println( " to " + activeIndex);
         }
+        menuItems.get(activeIndex).setSelected(true);
         if(KeyManager.keyJustPressed(KeyEvent.VK_ENTER)){
             menuItems.get(activeIndex).clicked();
         }
